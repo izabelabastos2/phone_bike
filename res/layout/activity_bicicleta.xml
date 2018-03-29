@@ -1,0 +1,320 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TableLayout
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="0.53"
+		android:stretchColumns="0,1" >
+        <TableRow >
+		   <TextView
+		       android:id="@+id/luces"
+		       android:layout_width="fill_parent"
+		       android:layout_height="match_parent"
+		       android:text="@string/luces" 
+		       android:layout_weight="0.83"/>
+		
+		   <Spinner
+		       android:id="@+id/estadoLuces"
+		       android:layout_width="fill_parent"
+		       android:layout_height="match_parent"
+		       android:layout_weight="0.83" />
+	</TableRow>
+
+        <TableRow >
+			  <TextView
+			        android:id="@+id/controlSensor"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.53"
+			        android:text="@string/controlSensor" />
+			
+			  <Spinner
+			      android:id="@+id/controlLuces"
+			      android:layout_width="match_parent"
+			      android:layout_height="match_parent"
+			      android:layout_weight="0.53" />
+  	</TableRow>
+
+       <TableRow >
+            <TextView
+                android:id="@+id/intermitentes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.53"
+                android:text="@string/intermitentes" />
+            
+		   	<SeekBar
+	             android:id="@+id/seekBar1"
+	             android:layout_width="match_parent"
+	             android:layout_height="match_parent" 
+	             android:layout_weight="0.53"/>     
+	             
+		   	</TableRow>
+
+       <TableRow>
+	            <TextView android:id="@+id/asistenciaMotor"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="0.53"
+	                android:text="@string/asistenciaMotor"/>
+
+	           <TextView 
+	               android:id="@+id/infoasistenciaMotor"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="0.63"/>
+	           </TableRow>
+	           
+           	<TableRow>	        
+	    	</TableRow>
+	   </TableLayout>         
+	       <!--       <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="0.53"
+	                android:text="10" />-->
+<TableLayout  
+       android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   android:layout_weight="0.83">
+				
+	            <Button
+	                android:id="@+id/button1"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:onClick="clickConect"
+	                android:text="Conectar Asistencia" />
+	            
+	            <Button
+	                android:id="@+id/asistenciaOff"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:onClick="clickDisconect"
+	                android:text="@string/asistenciaOff"
+	                android:layout_weight="0.53" />	
+	                
+	            </TableLayout>
+<TableLayout  
+       android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   android:layout_weight="0.53"
+	   android:stretchColumns="0,1">
+       
+<TableRow>	        
+	    	</TableRow>
+    
+    <TableRow >
+	            <TextView
+	                android:id="@+id/cicloBateria"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	                android:text="@string/cicloBateria" />
+	            
+	            <TextView
+	                android:id="@+id/infoCicloBateria"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	               android:text="89 %"/>    
+	</TableRow> 
+
+
+    <TableRow >
+	            <TextView
+	                android:id="@+id/cargaAtual"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	                android:text="@string/cargaAtual" />
+	           
+	            <TextView
+	                android:id="@+id/infoCargaAtual"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	               android:text= "76 %"/> 
+
+	</TableRow>
+
+    <TableRow >
+	            <TextView
+	                android:id="@+id/tiempoCargal"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	                android:text="@string/tiempoCarga"/>
+	            
+	             
+	            <TextView
+	                android:id="@+id/infoTiempoCargal"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	                android:text="1 h:25 min" />   
+	</TableRow>
+
+    <TableRow >
+	            <TextView
+	                android:id="@+id/consumo"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	                android:text="@string/consumo"/>
+	            
+	             
+	            <TextView
+	                android:id="@+id/infoconsumo"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	                android:text="0,3" />
+	            
+	</TableRow>
+
+    <TableRow >
+	            <TextView
+	                android:id="@+id/maxConsumo"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/maxConsumo"/>
+	            
+	             
+	            <TextView
+	                android:id="@+id/infoMaxConsumo"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	            	android:text="1,36"/>
+	</TableRow>
+
+
+
+
+    <TableRow >
+	           <TextView
+	                android:id="@+id/medConsumo"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	                android:text="@string/medConsumo"/>
+	             
+	            <TextView
+	                android:id="@+id/infoMedConsumo"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.53"
+	                android:text=" 0,73 "/>
+	            
+
+	</TableRow>
+	
+    	        <TableRow>            
+	        	<TextView android:padding="3dp" />	        
+	    	</TableRow>
+</TableLayout>
+	
+	<!-- 	        <ImageButton
+		            android:id="@+id/grabarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/grabar"
+		            android:onClick="clickGrabar"
+		            android:background="@color/black" />
+	
+		        <ImageButton
+		            android:id="@+id/cargarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/cargar"
+		            android:onClick="clickCarga"
+		            android:background="@color/black"/>
+	
+		        <ImageButton
+		            android:id="@+id/antirobo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/robo"
+		            android:onClick="clickAntiRobo"		            
+		            android:background="@color/black"/>
+		        
+		      <Button
+		            android:id="@+id/back2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:onClick="clickBack"
+		            android:text="@string/back1"
+		            android:background="@color/black"
+		            android:textColor="@color/Snown" />
+		        
+		         <Button
+		             android:id="@+id/exit"
+		             android:layout_width="fill_parent"
+		             android:layout_height="fill_parent"
+		             android:background="@color/black"
+		             android:text="@string/exit"
+		             android:textAppearance="?android:attr/textAppearanceLarge"-->
+		             
+		             
+		             
+	<TableLayout android:id="@+id/tableLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+	        android:gravity="center"
+	        android:layout_alignParentBottom="true"
+	        android:background="#E8E8E8"
+	        android:layout_weight="0.53"
+	        android:layout_gravity="bottom"
+	        android:stretchColumns="0,1,2,3" >
+	
+		<TableRow>
+		    
+		    <ImageButton
+		            android:id="@+id/bicicleta"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:src="@drawable/bike2"
+		       		android:onClick="clickBici"/>
+	
+		        <ImageButton
+		            android:id="@+id/grabarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/gears2"
+		            android:onClick="clickGrabar"/>
+	
+		        <ImageButton
+		            android:id="@+id/cargarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/pin2"
+		            android:onClick="clickCarga"/>
+	
+		        <ImageButton
+		            android:id="@+id/antirobo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/gears2"
+		            android:onClick="clickAntiRobo"/>
+			</TableRow>
+		  <!--        <Button
+		             android:id="@+id/exit"
+		             android:layout_width="fill_parent"
+		             android:layout_height="fill_parent"
+		             android:background="@color/black"
+		             android:text="@string/exit"
+		             android:textAppearance="?android:attr/textAppearanceLarge"
+		             android:textColor="@color/Snown" />
+			    
+			</TableRow>
+     --> 
+    </TableLayout>
+	
+
+</LinearLayout>

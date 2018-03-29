@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PatallaInicial" >
+    
+
+	<TableLayout android:id="@+id/tableLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+	        android:gravity="center_horizontal"
+	        android:layout_alignParentBottom="true"
+	        android:background="#E8E8E8"
+	        android:layout_weight="0.53"
+	        android:layout_marginBottom="05dp"
+	        android:stretchColumns="0,1,2,3" >
+	
+		<TableRow>
+		    
+		    <ImageButton
+		            android:id="@+id/bicicleta"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:src="@drawable/bike2"/>
+		       <!--       android:onClick="clickBici"/>-->
+	
+		        <ImageButton
+		            android:id="@+id/grabarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/gears2"
+		            android:onClick="clickGrabar"/>
+	
+		        <ImageButton
+		            android:id="@+id/cargarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/pin2"
+		            android:onClick="clickCarga"/>
+	
+		        <ImageButton
+		            android:id="@+id/antirobo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/gears2"
+		            android:onClick="clickAntiRobo"/>
+			</TableRow>
+		  <!--        <Button
+		             android:id="@+id/exit"
+		             android:layout_width="fill_parent"
+		             android:layout_height="fill_parent"
+		             android:background="@color/black"
+		             android:text="@string/exit"
+		             android:textAppearance="?android:attr/textAppearanceLarge"
+		             android:textColor="@color/Snown" />
+			    
+			</TableRow>
+     --> 
+    </TableLayout>
+
+	 <TextView
+	     android:id="@+id/imageView1"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_above="@+id/tableLayout1"
+	     android:layout_alignLeft="@+id/tableLayout1"
+	     android:layout_alignRight="@+id/tableLayout1"
+	     android:layout_marginBottom="50dp"
+	     android:layout_marginLeft="28dp"
+	     android:layout_marginRight="248dp"
+	     android:text="00,0 Km"
+	     android:textSize="50dp" />
+
+	 <TableLayout
+	     android:id="@+id/tableLayout0"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_above="@+id/tableLayout1"
+	     android:layout_alignRight="@+id/tableLayout1"
+	     android:layout_marginBottom="27dp"
+	     android:layout_marginRight="96dp"
+	     android:layout_weight="0.53"
+	     android:stretchColumns="0,1" >
+
+	     <TextView
+	         android:id="@+id/tiempoPercurso"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="0.53"
+	         android:text="12.4 Km"
+	         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	     <TextView android:padding="10dp" />
+
+	     <TextView
+	         android:id="@+id/distanciaPercorrida"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="0.53"
+	         android:text="1.25 Km"
+	         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	     <TextView android:padding="10dp" />
+
+	     <TextView
+	         android:id="@+id/porcentagemBateria"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="0.53"
+	         android:text="89 %"
+	         android:textAppearance="?android:attr/textAppearanceMedium" />
+	 </TableLayout>
+    
+</RelativeLayout>

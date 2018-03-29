@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colors Layout -->
+
+    <color name="Snown">#FFFAFA</color>
+    <color name="black">#000000</color>
+
+    <!-- Variables PhoneGap -->
+
+    <string name="tiempoPercurso"> Tiempo Percurso </string>
+    <string name="caloriasConsumidas"> Calorias Consumidas </string>
+    <string name="distanciaPercorrida"> Distancia Percorrida </string>
+    <string name="hora0"> Hora </string>
+    <string name="marcha"> Niveles de asistencia </string>
+    <string name="porcentagemBateria"> Porcentagem Bateria </string>
+    <string name="exit"> Salir </string>
+    <string name="temperaturaMotor">  Temperatura Motor </string>
+    <string name="parMotor"> Par Motor </string>
+    
+
+    <!-- Variables Bicicleta -->
+
+    <string name="luces">Luces </string>
+    <string name="intermitentes"> Intermitentes </string>
+    <string name="radio0"> Izq </string>
+    <string name="radio1"> OFF </string>
+    <string name="radio2"> Der </string>
+    <string name="controlSensor">Sensor luminosidad </string>
+    <string name="titulo1"> Luces </string>
+    <string name="titulo2"> Motor </string>
+    <string name="titulo3"> Bateria </string>
+    <string name="asistenciaMotor"> asistencia </string>
+    <string name="asistenciaOff"> Desconectar Asistencia </string>
+    <string name="cicloBateria"> Ciclos Baterias </string>
+    <string name="cargaAtual"> Carga Atual </string>
+    <string name="tiempoCarga"> Tiempo de Descarga </string>
+    <string name="consumo"> Consumo Atual </string>
+    <string name="maxConsumo"> Máximo Consumo Ah </string>
+    <string name="medConsumo"> Media Consumo Ah </string>
+    <string name="back1"> Princípio </string>
+    
+    <!-- Variables GrabarRuta -->
+    
+    <string name="velocidadK"> Velocidad Kilometros por hora </string>
+    <string name="mediaKm"> Velocidad Media </string>
+    <string name="maximoKm"> Velocidad Máx </string>
+    <string name="kilometrosRecorridos"> Recorridos </string>
+    <string name="tituloCampoHora"> Informacion Hora </string>
+	<string name="tiempoTrack"> Tiempo Track </string>
+	<string name="totalTrack"> Tiempo Total Tracking </string>
+	<string name="mediaTiempo"> Media Tiempo por Kilometro Recorrido </string>
+    <string name="tituloCampoDistancia"> Distancia </string>
+    <string name="distanciaRecorrida"> Info Distancia Recorrida </string>
+    <string name="totalDistanciaRecorrida"> Total Distancia Recorrida </string>
+    
+    
+    <!-- Variables AntiRobo -->
+    <string name="desconectMotor"> Desconectar Motor </string>
+    <string name="desconectAlarma"> Desconectar Alarma </string>
+    <string name="configuradorSensibilidade">Configurador Sensibilidad</string>
+    <string name="actuador">Actuador</string>
+    
+    
+    
+    
+    <!-- Variables General -->
+    
+    <string name="app_name">UrbanM</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_anti_robo">AntiRobo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_bicicleta">Bicicleta</string>
+    <string name="title_activity_cargar_ruta">Cargar Ruta</string>
+    <string name="title_activity_grabar_ruta">Grabar Ruta</string>
+
+</resources>

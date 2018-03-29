@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AntiRobo" >
+
+<!--	<TableLayout android:id="@+id/tableLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="10dp"
+	        android:background="@color/black"
+	        android:stretchColumns="0,1,2,3,4,5" >
+	
+		<TableRow>
+		    <ImageButton
+		            android:id="@+id/bicicleta"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/bicicleta" 
+		            android:onClick="clickBici"
+		            android:background="@color/black" />
+	
+		        <ImageButton
+		            android:id="@+id/grabarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/grabar"
+		            android:onClick="clickGrabar"
+		            android:background="@color/black" />
+	
+		        <ImageButton
+		            android:id="@+id/cargarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/cargar"
+		            android:onClick="clickCarga"
+		            android:background="@color/black"/>
+	
+		        <Button
+		            android:id="@+id/atras3"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:onClick="clickBack"	
+		            android:text="@string/back1"	            
+		            android:background="@color/black"
+		            android:textColor="@color/Snown"/>
+		        
+		         <Button
+		             android:id="@+id/exit"
+		             android:layout_width="fill_parent"
+		             android:layout_height="fill_parent"
+		             android:background="@color/black"
+		             android:onClick="clickExit"
+		             android:text="@string/exit"
+		             android:textColor="@color/Snown" />
+			</TableRow>
+    </TableLayout>  -->
+    
+<TableLayout android:id="@+id/tableLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"
+	        android:gravity="center_horizontal"
+	        android:layout_alignParentBottom="true"
+	        android:background="#E8E8E8"
+	        android:layout_weight="0.53"
+	        android:layout_marginBottom="05dp"
+	        android:stretchColumns="0,1,2,3" >
+	
+		<TableRow>
+		    
+		    <ImageButton
+		            android:id="@+id/bicicleta"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:src="@drawable/bike2"
+		            android:onClick="clickBici"/>
+	
+		        <ImageButton
+		            android:id="@+id/grabarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/gears2"
+		            android:onClick="clickGrabar"/>
+	
+		        <ImageButton
+		            android:id="@+id/cargarRuta"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/pin2"
+		            android:onClick="clickCarga"/>
+	
+		        <ImageButton
+		            android:id="@+id/antirobo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/gears2"/>
+			</TableRow>
+		  <!--        <Button
+		             android:id="@+id/exit"
+		             android:layout_width="fill_parent"
+		             android:layout_height="fill_parent"
+		             android:background="@color/black"
+		             android:text="@string/exit"
+		             android:textAppearance="?android:attr/textAppearanceLarge"
+		             android:textColor="@color/Snown" />
+			    
+			</TableRow>
+     --> 
+    </TableLayout>
+      
+		         <WebView
+		             android:id="@+id/wvGrafico"
+		             android:layout_width="fill_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_above="@+id/tableLayout1"
+		             android:layout_alignLeft="@+id/tableLayout1"
+		             android:layout_alignRight="@+id/map3"
+		             android:layout_below="@+id/tableLayout0"
+		             android:layout_marginRight="260dp" />
+
+		         <TableLayout
+		             android:id="@+id/tableLayout0"
+		             android:layout_width="match_parent"
+		             android:layout_height="40dp"
+		             android:background="#E8E8E8"
+		             android:layout_weight="0.53"
+		             android:gravity="center_horizontal"
+		             android:stretchColumns="0,1,2,3,4" >
+
+		             <TableRow>
+
+		                 <Button
+		                     android:id="@+id/desconectMotor"
+		                     android:layout_width="match_parent"
+		                     android:layout_height="match_parent"
+		                     android:text="@string/desconectMotor" />
+
+
+		                 <Button
+		                     android:id="@+id/desconectAlarma"
+		                     android:layout_width="match_parent"
+		                     android:layout_height="match_parent"
+		                     android:text="@string/desconectAlarma" />
+		             </TableRow>
+		         </TableLayout>
+
+		         <fragment
+		             android:id="@+id/map3"
+		             android:name="com.google.android.gms.maps.SupportMapFragment"
+		             android:layout_width="match_parent"
+		             android:layout_height="match_parent"
+		             android:layout_alignBottom="@+id/wvGrafico"
+		             android:layout_alignLeft="@+id/tableLayout1"
+		             android:layout_alignRight="@+id/tableLayout1"
+		             android:layout_alignTop="@+id/wvGrafico"
+		             android:layout_marginLeft="250dp" />
+		
+</RelativeLayout>
